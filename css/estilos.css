@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-family: 'Segoe UI',sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+    background: url(fondo.png), #485475;
+    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#485475), to(#6e6e6e));
+}
+
+/*Textarea*/
+textarea.form-control {
+    background-color: #2b2a30;
+    color: white;
+    border: none;
+    resize: none;
+}
+textarea.form-control[readonly] {
+    background-color: #c3c5c8;
+    color: #2b2a30;
+    resize: none;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+textarea.form-control::placeholder{
+    color:  rgb(195, 189, 189);
+}
+textarea.form-control:focus{
+    background-color: #393840;
+    color: white;
+}
+textarea.form-control[readonly]:focus{
+    background-color: #cccfd4;
+    color: #393840;
+}
+
+/*Div*/
+.img{
+    text-align: center;
+    color: #3a4149;
+    background-color: #c3c5c8;
+    height: 69vh;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+}
+.img>img{
+    width: 300px;
+}
+
+/*input*/
+input.form-control {
+    background-color: #2b2a30;
+    color: white;
+}
+input.form-control::placeholder{
+    color:  rgb(195, 189, 189);
+}
+input.form-control:focus{
+    background-color: #2b2a30;
+    color: white;
+}
+
+/*Buttons*/
+button.btn{
+    background-color: #3a4149;
+    color: white;
+    width: 250px;
+}
+button.btn.descript{
+    background-color: #e6e9ed;
+    color: #3a4149;
+    border: 2px solid #3a4149;
+}
+button.btn:hover{
+    background-color: #3a4149;
+    color: white;
+    opacity: 0.7;    
+}
+button.btn.descript:hover{
+    background-color: #e6e9ed;
+    color: #3a4149;
+    opacity: 0.7;    
+}
+
+.invalidText{
+    color: rgb(137, 72, 72);
+    font-weight: bold;
+    font-size: large;
+}
+
+#aviso{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(228, 224, 224, 0.525);
+    color: #3a4149;
+    padding: 1px;
+    border-radius: 8px;
+    margin-top: 10px;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.8s linear;
+}
